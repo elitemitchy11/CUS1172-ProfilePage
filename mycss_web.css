@@ -1,0 +1,87 @@
+body {
+  background-color: #D3D3D3;
+}
+/* CSS Style not covered in class is located here */
+
+h1 {
+  text-shadow: 2px 2px black;
+    text-align: center;
+    color: purple
+}
+
+h2 {
+    background-color: black;
+    text-align: center;
+    color: cyan;
+}
+
+li {
+  color: #00008B;
+
+}
+
+p {
+  color: #00008B;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 14;
+  font-weight: bold;
+}
+
+div {
+  color: #00008B;
+  text-align: center
+
+}
+
+table, th, td, tr {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 14;background-color: #A9A9A9;
+  color: white;
+  border: 1px solid
+
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto
+}
+
+img {
+  border-radius: 50%
+}
+
+ul {
+  list-style-type: circle;
+}
+
+/* Styling Form Tag */
+
+input[type=text] {
+  border: 2px solid cyan;
+  border-radius: 4px
+}
+
+a: link{
+  color: purple;
+}
+a:visited {
+  color: hotpink;
+}
+a:hover {
+  color: cyan;
+}
+a:active {
+  color: red;
+}
+@media print {
+  .center {
+    display: none;
+  }
+}
+
+@media (min-width: 1080px) and (max-width: 1920px) {}
+body {
+  background-color: #D3D3D3;
+  color: black;
+}
+}
