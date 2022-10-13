@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> To Do List </title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script src="Project2.js"/></script>
+
+  <style> * {
+    margin : 0;
+    padding : 0;
+    outline : none;
+    box-sizing: border-box;
+  }
+
+  form {
+    margin-top: 50px;
+    width: 350px;
+    position: relative;
+    left: 50%;
+    padding: 50px 10px;
+    border: 1px solid black;
+    transform: translateX(-50%);
+  }
+
+  .label {
+    font-size:1.5rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  h1 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+  }
+
+#add_task {
+  margin-top: 5px;
+  margin-bottom: 4px;
+  padding: 5px 7px;
+}
+
+#task {
+  margin: 25px 30px;
+}
+
+#priorities {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+#priorities div {
+  width: 12px;
+  height: 12px;
+  border-radius: 7px;
+  display: inline-block;
+}
+
+ul {
+list-style-type: none;
+}
+
+li {
+  font-size: 1.5rem;
+}
+
+li input[type="checkbox"] {
+  margin-right: 15px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.remove_task {
+  margin-left: 15px;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  color: purple;
+}
+</style>
+</head>
+
+  <body>
+    <form>
+      <h3> Add A New Task To Be Completed <h3>
+        <label class="label" for="title"> Task Title </label><br/>
+        <input id="title"> Required </input><br/>
+        <label class="label"> Priority </label><br/>
+
+  <select>
+    <option value="low"> Low </option>
+    <option value="medium"> Medium </option>
+    <option value="high"> High </option>
+  </select>
+</br/>
+
+<label class="label"> Status </label>
+
+<div>
+
+<input type="radio" id="pending" name="status" value="pending" checked>
+<label for="pending"> Task Pending </label>
+<input type="radio" id="completed" name="status" value="completed">
+<label for="completed"> Task Completed </label>
+</div>
+
+<button id-"Add_Task"> Add Task To List </button>
+</form>
+
+<div id="tasks">
+  <h2> Task List </h2>
+  <div id="priorities">
+    <div style="background: red"></div> High Priority
+    <div style="background: yellow"></div> Medium Priority
+    <div style="background: blue"></div> Low Priority
+
+  <ul id="all_tasks">
+    <ul>
+    </div>
+  </body>
+
+  </html>
